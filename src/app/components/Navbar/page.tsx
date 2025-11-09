@@ -21,13 +21,16 @@ export default function Navbar() {
         </button>
         <ul className={`${styles.links} ${open ? styles.open : ""}`}>
           <li>
-            <Link href="/">Accueil</Link>
+            <a href="#hero" onClick={() => setOpen(false)}>Accueil</a>
           </li>
           <li>
-            <Link href="/about">À propos</Link>
+            <a href="#skills" onClick={() => setOpen(false)}>Compétences</a>
           </li>
           <li>
-            <Link href="/projects">Projets</Link>
+            <a href="#projects" onClick={() => setOpen(false)}>Projets</a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
           </li>
         </ul>
       </nav>

@@ -1,0 +1,94 @@
+.contactSection {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 60px;
+}
+
+.sectionTitle {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.sectionSubtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 48px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 12px 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  background: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  padding: 12px 24px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .submitButton:hover {
+    background: #383838;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 48px 24px;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+  }
+
+  .sectionSubtitle {
+    font-size: 16px;
+  }
+}
