@@ -93,6 +93,142 @@ a.secondary {
   border-color: var(--button-secondary-border);
 }
 
+.imageHome {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.homeContainer {
+  height: 100VH;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Skills Section */
+.skillsSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 60px;
+}
+
+.sectionTitle {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.sectionSubtitle {
+  font-size: 18px;
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.skillCard {
+  background: var(--foreground);
+  border: 1px solid var(--button-secondary-border);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skillCard h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.skillCard p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.skillIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.introTitle {
+  font-size: 4rem;
+}
+
+.introSubtitle {
+  font-size: 2rem;
+}
+
+.buttonProjects {
+  margin-top: 1rem;
+  align-self: center;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 128px;
+  border: none;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.buttonContact {
+  margin-top: 1rem;
+  align-self: center;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 128px;
+  border: none;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, border-color 0.2s;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
@@ -103,6 +239,16 @@ a.secondary {
   a.secondary:hover {
     background: var(--button-secondary-hover);
     border-color: transparent;
+  }
+
+  .skillCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--text-primary);
+  }
+
+  .skillCard:hover .skillIcon {
+    transform: scale(1.1) rotate(5deg);
   }
 }
 
@@ -119,6 +265,28 @@ a.secondary {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -1.92px;
+  }
+
+  .skillsSection {
+    padding: 0 24px;
+    margin: 48px auto;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+  }
+
+  .sectionSubtitle {
+    font-size: 16px;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skillCard {
+    padding: 24px;
   }
 }
 
