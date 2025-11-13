@@ -1,3 +1,5 @@
+import styles from "./Projectsid.module.css";
+
 export default async function ProjectsPage({
   params,
 }: {
@@ -5,7 +7,7 @@ export default async function ProjectsPage({
 }) {
   const { id } = await params;
   return (
-    <div style={{ padding: "2rem" }}>
+    <div className={styles.container}>
       <h1>Projet {id}</h1>
       <p>Détails du projet #{id}</p>
     </div>

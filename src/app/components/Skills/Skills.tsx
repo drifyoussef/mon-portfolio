@@ -24,7 +24,7 @@ export default function Skills() {
         <div className={styles.skillCard}>
           <div className={styles.skillIcon}>💚</div>
           <h3>Node.js</h3>
-          <p>APIs REST et GraphQL, authentification, gestion de bases de données et microservices</p>
+          <p>APIs REST, authentification, sécurisation, gestion de bases de données et microservices</p>
         </div>
 
         <div className={styles.skillCard}>
@@ -42,7 +42,7 @@ export default function Skills() {
         <div className={styles.skillCard}>
           <div className={styles.skillIcon}>🛠️</div>
           <h3>DevOps</h3>
-          <p>CI/CD, Docker, déploiement cloud (Vercel, AWS), monitoring et optimisation</p>
+          <p>CI/CD, Docker, déploiement cloud (Vercel, OVH), monitoring et optimisation</p>
         </div>
       </div>
     </section>
