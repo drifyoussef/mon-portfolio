@@ -10,7 +10,7 @@ export default function ProjectsListPage() {
           <Card
             image=""
             title="Togeather"
-            description="Application collaborative pour organiser des événements"
+            description="Projet BAC+4 de rencontres amicales autour d'un repas"
             link="/projects/togeather"
           />
           <Card
@@ -19,9 +19,9 @@ export default function ProjectsListPage() {
             link="/projects/weather-app"
           />
           <Card
-            title="Portfolio"
-            description="Mon portfolio personnel construit avec Next.js"
-            link="/projects/portfolio"
+            title="Billio"
+            description="Application de gestion de clients et facturation pour les indépendants et les petites entreprisess"
+            link="/projects/billio"
           />
         </div>
       </div>

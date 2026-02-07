@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
+import YDDEV from "../../../../public/YDDEV.png";
+import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,7 +12,7 @@ export default function Navbar() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <Link className={styles.logo} href="/">
-          Mon Portfolio
+          <Image src={YDDEV} alt="YDDEV Logo" className={styles.logoImage} />
         </Link>
         <button
           className={styles.burger}

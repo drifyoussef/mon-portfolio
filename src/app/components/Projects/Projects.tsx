@@ -12,18 +12,18 @@ export default function Projects() {
       <div className={styles.projectsGrid}>
         <Card
           title="Togeather"
-          description="Application collaborative pour organiser des événements"
+          description="Projet BAC+4 de rencontres amicales autour d'un repas"
           link="/projects/togeather"
+        />
+        <Card
+          title="Billio"
+          description="Application de gestion de clients et facturation pour les indépendants et les petites entreprisess"
+          link="/projects/billio"
         />
         <Card
           title="Weather App"
           description="Application météo en temps réel"
           link="/projects/weather-app"
-        />
-        <Card
-          title="Portfolio"
-          description="Mon portfolio personnel construit avec Next.js"
-          link="/projects/portfolio"
         />
       </div>
     </section>

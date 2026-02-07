@@ -2,6 +2,7 @@
   background: #fff;
   border-bottom: 1px solid #eee;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -11,18 +12,27 @@
   width: -webkit-fill-available;
   background: #fff;
   border-bottom: 1px solid darkgray;
+  z-index: 1000;
 }
+
 .logo {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
 }
+
+.logoImage {
+  width: 64px;
+  height: 56px;
+}
+
 .burger {
   display: none;
   background: transparent;
   border: none;
   font-size: 1.25rem;
 }
+
 .links {
   list-style: none;
   display: flex;
@@ -30,10 +40,12 @@
   margin: 0;
   padding: 0;
 }
+
 .links a {
   text-decoration: none;
   color: #111;
 }
+
 .open {
   display: flex;
 }
